@@ -1,6 +1,7 @@
 const incomeForm = document.querySelector('#income-form')
 const expenseForm = document.querySelector('#expense-form')
 const incomeInput = document.querySelector('#income-input')
+const expenseName = document.querySelector('#input-expense-name')
 const expenseInput = document.querySelector('#input-expenses')
 const incomeDisplay = document.querySelector('[data-income-display')
 const expenseList = document.querySelector('[data-expense-list]')
@@ -29,23 +30,24 @@ expenseForm.addEventListener('submit', e => {
     e.preventDefault()
 
     const expenseItem = document.createElement('div')
-    expenseItem.innerText=expenseInput.value
+    expenseItem.innerText=expenseName.value + " " + expenseInput.value
     expenseItem.classList.add('expense')
     expenseList.append(expenseItem)
     
     if(expenseInput.value != ''){
         expenseTotal += parseInt(expenseInput.value)
-        
-
         expenseTotalDisplay.innerText = 'Total Expenses: $' + expenseTotal
+        console.log(expenseTotal)
     }
     expenseInput.value = ''
+    expenseName.value = ''
     
 
     expenseItem.addEventListener("click", ()=>{
         
-        expenseTotal -= parseInt(expenseItem.innerText)
+        expenseTotal -= parseInt(expenseItem.value)
         remainingBalance = incomeTotal-expenseTotal
+        console.log(expenseTotal)
 
         remainingBalanceDisplay.innerText = 'Remaining Balance: $' + remainingBalance
         expenseTotalDisplay.innerText = 'Total Expenses: $' + expenseTotal
