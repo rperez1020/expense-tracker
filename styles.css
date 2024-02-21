@@ -1,6 +1,12 @@
-#balanceDisplay{
-    border: 1px red solid
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom right,blue, green) 
+    
 }
-#expenseList{
-    border: 1px blue solid
+
+#user-interface{
+    border: 2px black solid;
+    background-color: rgb(228, 221, 221);
+
 }

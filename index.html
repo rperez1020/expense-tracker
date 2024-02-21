@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Expense Tracker</title>
     <script src="script.js" defer></script>
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <div data-income id="balanceDisplay">
-        <form id="income-form">
-            <input type="text" id = "income-input" placeholder="Enter Income"/>
-            <button type="submit">Add</button>
-        </form>
-        <div data-income-display></div>
-        <div data-expense-total></div>
-        <div data-remaining-balance-display></div>
-        
-    </div>
-    <div data-expenses id="expenseList">
-        <form id="expense-form">
-            <input id = "input-expense-name" placeholder="Enter Expense" required>
-            <input id = "input-expenses" placeholder="Enter Cost" required>
-            <button type="submit">Add</button>
-        </form>
-        <div data-expense-list></div>
+    <div id = "user-interface">
+        <div data-income id="balanceDisplay">
+            <form id="income-form">
+                <input type="text" id = "income-input" placeholder="Enter Income" required/>
+                <button type="submit">Add</button>
+            </form>
+            <div data-income-display></div>
+            <div data-expense-total></div>
+            <div data-remaining-balance-display></div>
+            
+        </div>
+        <div data-expenses id="expenseList">
+            <form id="expense-form">
+                <input id = "input-expense-name" placeholder="Enter Expense" required>
+                <input id = "input-expenses" placeholder="Enter Cost" required>
+                <button type="submit">Add</button>
+            </form>
+            <div data-expense-list></div>
+        </div>
     </div>
 </body>
 </html>
