@@ -1,19 +1,28 @@
 body{
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(to bottom right,blue, green); 
+    background-image: linear-gradient(to bottom right,rgb(105, 105, 107), rgb(92, 92, 99)); 
     display: grid;
     place-content: center
     
 }
 
 #user-interface{
-    border: 2px black solid;
-    background-color: rgb(228, 221, 221);
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgb(167, 165, 165);
 
+}
+
+.expense{
+    margin: 5px 0px 5px 0px
 }
 
 .expenseItem:hover{
     cursor: pointer;
-    color: red
+    color: red;
+}
+
+input{
+    margin: 5px 0px 5px 0px
 }

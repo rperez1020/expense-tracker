@@ -54,5 +54,5 @@ function updateDisplay(){
     remainingBalance = incomeTotal - expenseTotal
     incomeDisplay.innerText = 'Income: $'+incomeTotal
     remainingBalanceDisplay.innerText = `Remaining Balance: $${remainingBalance}`
-    expenseTotalDisplay.innerText = `Total Expenses: $ ${expenseTotal}`  
+    expenseTotalDisplay.innerText = `Total Expenses: $${expenseTotal}`  
 }
