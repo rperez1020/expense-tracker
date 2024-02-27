@@ -28,6 +28,7 @@ expenseForm.addEventListener('submit', e => {
     e.preventDefault()
 
     const expenseItem = document.createElement('div')
+    expenseItem.classList.add('expenseItem')
     expenseItem.innerText=`${expenseName.value}: $${expenseInput.value}`
     expenseItem.expense = parseInt(expenseInput.value)
     expenseList.append(expenseItem)
